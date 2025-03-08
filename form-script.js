@@ -10,6 +10,9 @@
    */
   const form = document.querySelector("#form")
 
+  /**
+   * Add employee function
+   */
   form.addEventListener("submit", async e => {
     e.preventDefault()
 

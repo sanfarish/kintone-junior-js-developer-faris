@@ -9,44 +9,43 @@
 
     <!-- import styles.css -->
     <link rel="stylesheet" href="styles.css">
-    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
   </head>
 
   <body>
-    <header class="bg-red-800 text-white h-16 flex items-center justify-center">
-      <h1 class="text-xl font-bold">Employee Data</h1>
+    <header>
+      <h1>Employee Data</h1>
     </header>
     
-    <main class="form-main bg-gray-400 flex items-center justify-center py-8 px-4">
-      <div class="card bg-gray-800 w-full max-w-sm p-4 shadow-md rounded-lg flex flex-col gap-8"> <!-- Card -->
+    <main class="form-main">
+      <div class="card"> <!-- Card -->
 
         <!-- Back button (to index) -->
         <form action="index.html">
-          <input class="navigate-index px-2 py-1 mr-auto rounded text-gray-400 border border-gray-400 cursor-pointer" type="submit" value="< Return to Employees">
+          <input class="navigate-index" type="submit" value="< Return to Employees">
         </form>
 
         <!-- Form -->
-        <form id="form" class="text-white flex flex-col gap-4">
-          <label class="flex justify-between" for="name">
+        <form id="form">
+          <label for="name">
             Name:
-            <input class="border rounded px-2" type="text" name="name" id="name" required>
+            <input type="text" name="name" id="name" required>
           </label>
 
-          <label class="flex justify-between" for="position">
+          <label for="position">
             Position:
-            <input class="border rounded px-2" type="text" name="position" id="position" required>
+            <input type="text" name="position" id="position" required>
           </label>
 
-          <span class="text-gray-400">* ID will be randomized</span>
+          <span>* ID will be randomized</span>
 
           <!-- Submit Button -->
-          <input class="px-2 py-1 bg-red-800 rounded cursor-pointer" type="submit" value="Add Employee">
+          <input type="submit" value="Add Employee">
         </form>
       </div>
     </main>
 
-    <footer class="bg-red-800 text-white h-16 flex items-center justify-center">
-      <span class="text-bold">C 2025 Copyright Faris Hasan</span>
+    <footer>
+      <span>C 2025 Copyright Faris Hasan</span>
     </footer>
 
     <!-- import form-script.js -->
