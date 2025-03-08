@@ -1,0 +1,59 @@
+<!-- Index Page to filter and display data -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Data</title>
+
+    <!-- import styles.css -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+  </head>
+
+  <body>
+    <header class="bg-red-800 text-white h-16 flex items-center justify-center">
+      <h1 class="text-xl font-bold">Employee Data</h1>
+    </header>
+
+    <main class="index-main bg-gray-400 flex items-center justify-center py-8 px-2 md:px-32">
+      <div class="card bg-gray-800 h-full w-full p-4 shadow-md rounded-lg flex flex-col gap-4"> <!-- Card -->
+
+        <div class="card-header flex items-center justify-between"> <!-- Card Header -->
+          <!-- Button to navigate to form -->
+          <form action="form.html">
+            <input class="navigate-form text-xs md:text-base px-2 py-1 rounded bg-blue-800 cursor-pointer" type="submit" value="Add Employee">
+          </form>
+      
+          <!-- Filter Component -->
+          <label class="filter-label text-white text-xs md:text-base" for="filter">
+            Filter:
+            <input class="filter-input border rounded px-2 py-1" type="text" name="filter" id="filter" placeholder="employee's name">
+          </label>
+        </div>
+    
+        <!-- Table to display data -->
+        <table class="text-xs md:text-base text-white border-collapse border border-gray-400 table-fixed">
+          <thead class="uppercase">
+            <tr class="text-left">
+              <th scope="col" class="border border-gray-300 px-4 py-2">ID</th>
+              <th scope="col" class="border border-gray-300 px-4 py-2">Name</th>
+              <th scope="col" class="border border-gray-300 px-4 py-2">Position</th>
+              <th scope="col" class="border border-gray-300 px-4 py-2">Actions</th>
+            </tr>
+          </thead>
+    
+          <tbody id="table"></tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer class="bg-red-800 text-white h-16 flex items-center justify-center">
+      <span class="text-bold">C 2025 Copyright Faris Hasan</span>
+    </footer>
+
+    <!-- import index-script.js -->
+    <script src="index-script.js"></script>
+  </body>
+</html>

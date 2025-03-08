@@ -1,0 +1,206 @@
+/* Responsive down to 400px */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+input {
+    border: none;
+    background-color: transparent;
+}
+
+:root {
+    --bg: #020122;
+    --tone: #D13100;
+    --card: #4B455B;
+    --table: #3D3A47;
+}
+
+header, footer {
+    background-color: var(--tone);
+    color: white;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.index-main {
+    background-color: var(--bg);
+    padding: 2rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 48rem) {
+    .index-main {
+        padding: 2rem 8rem;
+    }
+}
+.index-main .card {
+    background-color: var(--card);
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 4px 6px 9px 2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 4px 6px 9px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 6px 9px 2px rgba(0,0,0,0.75);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigate-form {
+    font-size: 0.75rem;
+    background-color: var(--tone);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+@media (min-width: 48rem) {
+    .navigate-form {
+        font-size: 1rem;
+    }
+}
+
+.filter-label {
+    color: white;
+    font-size: 0.75rem;
+}
+
+@media (min-width: 48rem) {
+    .filter-label {
+        font-size: 1rem;
+    }
+
+    .filter-input {
+        font-size: 1rem;
+    }
+}
+
+.filter-input {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid white;
+    border-radius: 0.25rem;
+}
+
+table {
+    font-size: 0.75rem;
+    color: white;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+@media (min-width: 48rem) {
+    table {
+        font-size: 1rem;
+    }
+}
+
+thead {
+    text-transform: uppercase;
+}
+
+thead tr {
+    text-align: left;
+}
+
+thead tr th {
+    padding: 0.5rem 1rem;
+    border: 1px solid black;
+}
+
+tbody tr {
+    background-color: var(--table);
+    height: 4rem;
+}
+
+tbody tr td {
+    padding: 0 1rem;
+    border: 1px solid black;
+}
+
+.delete {
+    background-color: red;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+
+/* form.html */
+
+.form-main {
+    background-color: var(--bg);
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-main .card {
+    background-color: var(--card);
+    width: 100%;
+    max-width: 24rem;
+    padding: 1rem;
+    box-shadow: 4px 6px 9px 2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 4px 6px 9px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 6px 9px 2px rgba(0,0,0,0.75);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.navigate-index {
+    font-size: 1rem;
+    color: white;
+    margin-right: auto;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid white;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+#form {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#form label {
+    display: flex;
+    justify-content: space-between;
+}
+
+#form label input {
+    font-size: 1rem;
+    color: white;
+    border: 1px solid white;
+    border-radius: 0.25rem;
+    padding: 0 0.5rem;
+}
+
+#form > input {
+    font-size: 1rem;
+    background-color: var(--tone);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
